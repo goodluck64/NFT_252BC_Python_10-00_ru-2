@@ -20,9 +20,6 @@ result = add(10, 30)
 print(result)
 
 
-
-
-
 # print_hello()
 
 
