@@ -1,3 +1,15 @@
+# a = 9
+# b = 6
+# # -(2 - 0.5 - 2)
+# a, b = b, a
+
+#
+# c = a # c = 5
+# a = b # a = 10
+# b = c # b = 10
+
+
+# print(a, b)
 
 
 # def sum(num1, num2=0): # parameters
