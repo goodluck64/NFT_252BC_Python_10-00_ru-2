@@ -132,3 +132,11 @@ joined = "-".join(result)
 print(joined)
 
 
+### in operator
+
+text = "hello"
+
+if "o" in text:
+    print("o is in text")
+
+
