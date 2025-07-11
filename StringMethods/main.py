@@ -134,9 +134,17 @@ print(joined)
 
 ### in operator
 
-text = "hello"
+# text = "hello"
+#
+# if "o" in text:
+#     print("o is in text")
 
-if "o" in text:
-    print("o is in text")
 
+### remove text
+
+text = "Hello world!"
+
+newStr = text.replace(" ", "")
+
+print(newStr)
 
