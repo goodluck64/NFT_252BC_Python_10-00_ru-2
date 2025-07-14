@@ -58,6 +58,11 @@
 # print_values(b=10, c=30, a=20)
 
 
-a = [10, 20, 30, 11, 12]
+a = [10, 20, -30, 11, 12]
 
-print(min(a))
+min = 10
+
+for item in a:
+    if item < min:
+        ## ???
+
