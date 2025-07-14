@@ -118,18 +118,18 @@
 
 ### split & join
 
-text = input() # Hello how are you my friend?
-
-result = text.split(" ")
-
-words = len(result)
-
-print(words)
-print(result)
-
-joined = "-".join(result)
-
-print(joined)
+# text = input() # Hello how are you my friend?
+#
+# result = text.split(" ")
+#
+# words = len(result)
+#
+# print(words)
+# print(result)
+#
+# joined = "-".join(result)
+#
+# print(joined)
 
 
 ### in operator
@@ -142,9 +142,27 @@ print(joined)
 
 ### remove text
 
-text = "Hello world!"
+# text = "Hello world!"
+#
+# newStr = text.replace(" ", "")
+#
+# print(newStr)
 
-newStr = text.replace(" ", "")
+# s = 82
+#
+# print(chr(s))
+# print(ord('B'))
 
-print(newStr)
 
+
+# oldStr = "hello"
+
+# s[0] = "H"
+
+# newStr = oldStr.capitalize()
+#
+# print(oldStr)
+# print(newStr)
+
+
+print("Hello" * 2)
