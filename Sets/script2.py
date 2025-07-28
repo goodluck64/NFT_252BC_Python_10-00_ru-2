@@ -89,8 +89,15 @@ s2 = {3, 4, 5, 6, 7}
 
 ## isdisjoint
 
-set1 = {1, 2, 3}
-set2 = {4, 5, 6}
+# set1 = {1, 2, 3}
+# set2 = {4, 5, 6}
+#
+# print(set1.isdisjoint(set2))
 
-print(set1.isdisjoint(set2))
 
+## cast list to set
+l = [2, 1, 2, 3, 4]
+
+myset = set(l)
+
+print(myset)
