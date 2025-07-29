@@ -9,8 +9,8 @@
 
 
 # s = set()
-s1 = {1, 2, 3, 4, 5}
-s2 = {3, 4, 5, 6, 7}
+# s1 = {1, 2, 3, 4, 5}
+# s2 = {3, 4, 5, 6, 7}
 
 # for item in s:
 #     print(item)
@@ -96,8 +96,52 @@ s2 = {3, 4, 5, 6, 7}
 
 
 ## cast list to set
-l = [2, 1, 2, 3, 4]
+# l = [2, 1, 2, 3, 4]
+#
+# myset = set(l)
+#
+# print(myset)
 
-myset = set(l)
 
-print(myset)
+## intersection vs intersection_update
+# s1 = {1, 2, 3}
+# s2 = {3, 4, 5}
+#
+# s3 = s1.intersection(s2)
+#
+# print(s1)
+# print(s2)
+# print(s3)
+
+# s1 = {1, 2, 3}
+# s2 = {3, 4, 5}
+#
+# s3 = s1.symmetric_difference(s2)
+#
+# print(s1)
+# print(s2)
+# print(s3)
+
+
+t = (10, "Alex", True)
+l = [10, 20, 30]
+
+
+
+def print_(data):
+    print(data["name"])
+    print(data["age"])
+
+
+
+a = {
+    "name": "Murad",
+    "age": 0
+}
+
+a["surname"] = "test"
+
+# surname
+
+
+
