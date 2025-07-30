@@ -31,3 +31,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def my_min(*args):
+    ...
+
+
+x = [10, 12, 11, 14, 3, 90]
+
