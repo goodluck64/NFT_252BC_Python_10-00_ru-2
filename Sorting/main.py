@@ -16,14 +16,36 @@
 ## Complexity (worst case): O(n^2)
 ## Complexity (best case): O(n)
 
+# data = [42, 69, 13, 9, 17]
+#
+# for i in range(len(data) - 1):
+#     for j in range(len(data) - i - 1):
+#         if data[j] > data[j + 1]:
+#             temp = data[j]
+#             data[j] = data[j + 1]
+#             data[j + 1] = temp
+
+# print(data)
+
+######################
+### selection sort ###
+## Complexity (worst case): O(n^2)
+## Complexity (best case): O(n)
+
+
 data = [42, 69, 13, 9, 17]
 
-for i in range(len(data) - 1):
-    for j in range(len(data) - i - 1):
-        if data[j] > data[j + 1]:
-            temp = data[j]
-            data[j] = data[j + 1]
-            data[j + 1] = temp
+for i in range(len(data)):
 
+    idx = i
+
+    for j in range(i, len(data)):
+        if data[idx] > data[j]:
+            idx = j
+
+    temp = data[i]
+
+    data[i] = data[idx]
+    data[idx] = temp
 
 print(data)
