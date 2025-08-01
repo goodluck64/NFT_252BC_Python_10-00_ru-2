@@ -49,3 +49,5 @@ for i in range(len(data)):
     data[idx] = temp
 
 print(data)
+# ascending
+# descending
