@@ -39,3 +39,39 @@ while True:
 
 
 print(f"Value = {value}")
+
+
+names = []
+
+def add_name(name):
+    if not name[0].isupper():
+        raise ValueError("Name must start with a capital letter")
+
+    names.append(name)
+
+# throw
+
+try:
+    add_name("Alex")
+    add_name("ela")
+except ValueError as err:
+    print(err)
+
+print(names)
+
+
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Can't divide by zero")
+
+    return a / b
+
+try:
+    a = int(input())
+    b = int(input())
+
+    result = divide(a, b)
+
+    print(result)
+except ZeroDivisionError as err:
+    print(err)
