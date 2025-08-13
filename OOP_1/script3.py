@@ -1,70 +1,85 @@
-# w - write
-# r - read
-# a - append
+class Animal: # base class, parent class, super class
+    def __init__(self, name, color): # magic method (constructor)
+        self.__name = name
+        self.color = color
 
-# t - text
-# b - binary
+    def getName(self):
+        return self.__name
 
-######### write to a file
-# file = open("data.txt", "w")
+    def setName(self, newName):
+        if not newName[0].isupper() or not newName.isalpha():
+            raise ValueError("Incorrect Name")
+
+        self.__name = newName
+
+    def voice(self):
+        print("Unknown voice :<")
+
+class Cat(Animal): # derived class, child class
+    def __init__(self, name, color):
+        super().__init__(name, color)
+
+        self.__speed = 100
+
+    def voice(self):
+        print("Meow-meow!")
+
+    def getSpeed(self):
+        return self.__speed
+
+class Dog(Animal):
+    def __init__(self, name, color):
+        super().__init__(name, color)
+
+    def voice(self):
+        # super().voice()
+        print("Bark-bark!")
+
+cat1 = Cat("Tika", "white")
+
+cat1.voice()
+print(cat1.getName())
+
+dog1 = Dog("Doggy", "red")
+
+dog1.voice()
+print(dog1.getName())
+
+
+# animal1 = Animal("Tarlan", "Black")
+# animal2 = Animal("Atin", "Purple")
 #
-# names = []
-
-# while True:
-#     name = input("Enter a name: ")
+# animal1.setName("Murad")
 #
-#     if name == "0":
-#         break
+# print(animal1.getName())
+
+
+
+# class Product:
+#     def __init__(self, name, price):
+#         self.name = name
+#         self.__price = price
 #
-#     names.append(name + "\n")
-
-# if file.writable():
-#     file.write()
-#     file.writelines(names)
+#     def display(self):
+#         print(f"{self.name}: {self.__price}")
 #
-# file.close()
-
-
-
-######### read from a file
-
-with open("data.txt", "r") as file:
-    ### read lines thru for loop
-    # for line in file:
-    #     print(line, end="")
-
-    ### read lines
-    # lines = file.readlines()
-    #
-    # print(lines)
-
-    ### read chunks, seek, tell
-    # chunk = file.read(4)
-    #
-    # print(chunk)
-    #
-    # file.seek(5)
-    #
-    # chunk = file.read(5)
-    #
-    # print(chunk)
-    #
-    # file.seek(0, 2)
-    #
-    # pos = file.tell()
-    #
-    # print(pos)
-
-    ### read a single line
-    # line1 = file.readline()
-    # line2 = file.readline()
-    #
-    # print(line1, line2)
-
-
-# x = "Hello\nWorld"
-# # \n - new line
-# # \t - tab
-# # \b - backspace
+#     def get_price(self):
+#         return self.__price
 #
-# print(x)
+#     def set_price(self, value):
+#         if value <= 0:
+#             raise ValueError("Price must be greater than 0")
+#
+#         self.__price = value
+#
+# prod1 = Product("Pomidor", 2)
+# prod2 = Product("Cucumber", 2.2)
+#
+# prod1.set_price(prod1.get_price() * -0.9)
+
+# __price = __price * 0.9
+
+# prod1.display()
+# prod2.display()
+
+
