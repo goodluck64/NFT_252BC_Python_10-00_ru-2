@@ -45,7 +45,8 @@ dog1 = Dog("Doggy", "red")
 dog1.voice()
 print(dog1.getName())
 
-
+# "".isdigit()
+# "".isalpha()
 # animal1 = Animal("Tarlan", "Black")
 # animal2 = Animal("Atin", "Purple")
 #
@@ -81,5 +82,3 @@ print(dog1.getName())
 
 # prod1.display()
 # prod2.display()
-
-
