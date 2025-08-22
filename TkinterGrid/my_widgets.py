@@ -92,8 +92,20 @@ def create_widgets(root):
 
     # lower frame buttons
 
+
+
+    entry1 = ttk.Entry(lower_frame)
     button5 = ttk.Button(lower_frame, text="Button 5")
-    button6 = ttk.Button(lower_frame, text="Button 6")
+
+    def on_button6_clicked():
+        current_text: str = entry1.get()
+
+        last_index = len(current_text) - 1
+
+        entry1.insert(last_index, "1")
+
+    button6 = ttk.Button(lower_frame, text="CLICK ME", command=on_button6_clicked)
 
     button5.grid(row=0, column=0, sticky="nsew")
-    button6.grid(row=0, column=1, columnspan=2, sticky="nsew")
+    button6.grid(row=0, column=1, sticky="nsew")
+    entry1.grid(row=0, column=2, sticky="nsew")
